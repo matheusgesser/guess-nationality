@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #232526;  /* fallback for old browsers */
+  background: linear-gradient(to top, rgb(27, 38, 54), rgb(26, 26, 26));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main.container {
+  position: relative;
+  margin-top: 2rem;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  /* background: rgba( 255, 255, 255, 0.02 );
+  box-shadow: 0 2px 20px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.15 ); */
+}
+
+.header {
+  min-height: 18vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.header strong {
+  width: auto;
+  font-size: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.inputBox {
+  width: 100%;
+  position: relative;
+}
+
+.header input {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  height: 3rem;
+  width: 25rem;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+}
+
+.header span {
+  color: #fff;
+  position: absolute;
+  top: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.header button:hover {
+  background: #fff;
+  color: #333;
+}
+
+.header input, .header input:active, input:hover, input:focus {
+  border: none;
+  outline: none;
+}
+
+#results {
+  min-height: 610px;
+  min-width: 18rem;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 2rem;
+  /* display: none; */
+}
+
+#results #firstCountry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 40%;
+}
+
+#results #firstCountry .country-flag {
+  height: 10rem;
+  width: 80%;
+  max-width: 250px;
+}
+
+#firstCountry > article:nth-child(2) > span:nth-child(2) {
+  display: inherit;
+  width: 100%;
+  text-align: center;
+}
+
+#results #otherCountries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 60%;
+  gap: 3rem;
+}
+
+#results #otherCountries span {
+  display: inherit;
+  text-align: center;
+}
+
+#results #otherCountries .country {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#results #otherCountries .country-flag {
+  height: 6rem;
+  width: 11rem;
+}
+
+.country-flag {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#otherCountries .country-info {
+  width: 8rem;
+}
+
+#firstCountry strong {
+  font-size: 1.5rem;
+}
+
+#firstCountry span {
+  font-size: 1.3rem;
+}
+
+strong, #results span {
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
+strong {
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  text-overflow: clip;
+}
+
+span {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.loader-box {
+  position: absolute;
+  top: 15rem;
+  pointer-events: none;
+}
+
+#loader {
+  display: none;
+}
+
+.credits {
+  position: fixed;
+  bottom: 0;
+  text-decoration: none;
+  color: #ffffff33;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+@media (max-width:950px) {
+  .header span {
+    top: 5.5rem;
+  }
+  main.container {
+    padding: 0;
+    width: 90vw;
+  }
+}
+
+@media (max-width:500px) {
+  #results #firstCountry .country-flag {
+    width: 80vw;
+  }
+  .header input {
+    width: 80vw;
+  }
+  .header strong {
+    width: auto;
+    font-size: 150%;
+  }
+  .header span {
+    top: 5.3rem;
+  }
+  #results {
+    padding: 0;
+  }
+  #results #otherCountries {
+    gap: 0.5rem;
+  }
+  .country {
+    gap: 0.5rem;
+  }
+  #results #otherCountries .country-flag {
+    height: 6rem;
+    width: 30vw;
+  }
+  #otherCountries .country-info {
+    width: 40vw;
+  }
+}
