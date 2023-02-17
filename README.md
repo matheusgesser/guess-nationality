@@ -8,3 +8,5 @@ Shooting stars by alphardex
 # Preview/Demo
 
 https://gesserpredict.netlify.app/
+
+<img src="https://i.imgur.com/CdY3Nly.png" />
