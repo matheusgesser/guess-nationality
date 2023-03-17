@@ -1,4 +1,4 @@
-# guessNameNationality 💬
+# guessNameNationality 🌎
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/matheusgesser/guessNameNationality?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/matheusgesser/guessNameNationality?style=for-the-badge)
@@ -6,11 +6,11 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/matheusgesser/guessNameNationality?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/matheusgesser/guessNameNationality?style=for-the-badge)
 
-<img src="https://i.imgur.com/CdY3Nly.png" alt="Imagem demonstrativa Desktop">
+<img src="https://i.imgur.com/CdY3Nly.png" alt="Demo image">
 
 > Predicts the **nationality of a name**.
 
-**Acesse: <a href="https://gesserpredict.netlify.app/">gesserpredict.netlify.app</a>**
+**Try it: <a href="https://gesserpredict.netlify.app/">gesserpredict.netlify.app</a>**
 
 ## 💻 **Tecnologias**
 
