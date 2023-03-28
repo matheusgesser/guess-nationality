@@ -10,7 +10,9 @@
 
 > Predicts the **nationality of a name**.
 
-**Try it: <a href="https://gesserpredict.netlify.app/">gesserpredict.netlify.app</a>**
+## 🔴 **Live Version**
+
+**<a href="https://gesserpredict.netlify.app/">gesserpredict.netlify.app</a>**
 
 ## 💻 **Technologies**
 
