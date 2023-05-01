@@ -12,7 +12,7 @@
 
 ## 🔴 **Live Version**
 
-**<a href="https://gesserpredict.netlify.app/">gesserpredict.netlify.app</a>**
+**<a href="https://namepredict.netlify.app/">namepredict.netlify.app</a>**
 
 ## 💻 **Technologies**
 
